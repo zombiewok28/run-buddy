@@ -12,13 +12,12 @@ body {
     font-family: helvetica, Arial, sans-serif;  
 }
 
-/* apply styles to <header> */
+/* apply styles to header & nav bar */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
 }
 
-/* apply styles to header h1 */
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -27,7 +26,6 @@ header h1 {
     display: inline;
 }
 
-/* apply styles to header a */
 header a {
     text-decoration: none;
     color: #fce138;
@@ -47,7 +45,9 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
 }
+/* Header/Nav Bar style end */
 
+/* Footer Styles Start */
 footer {
     background: #fce138;
     width: 100%;
@@ -70,7 +70,9 @@ footer div {
 footer a {
     color: #024e76;
 }
+/* End Footer Styles */
 
+/* Style all Section Tags */
 section {
     padding: 60px;
     }
@@ -83,7 +85,6 @@ section {
     background-position: center;
     position: relative;
 }
-/* Hero Style End */
 
 .hero-form {
     border: 3px solid #024e76;
@@ -127,11 +128,12 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
+/* Hero Styles End */
 
+/*What we do Styles */
 .intro {
     text-align: center;
 }
-
 
 .intro p {
     line-height: 1.7;
@@ -145,8 +147,9 @@ section {
     /* add this alongside your other declarations */
     margin: 0 auto;
 }
+/*What we Styles End */
 
-/*adds background color */
+/*What you do Styles Start */
 .steps {
     text-align: center;
     background: #fce138;
@@ -175,7 +178,9 @@ section {
 .steps span {
     font-size: 38px;
 }
+/*What you do Styles End */
 
+/* Section Title Styles Start */
 .section-title {
     font-size: 55px;
     color: #024e76;
@@ -192,7 +197,9 @@ section {
 .secondary-border {
     border-color: #39a6b2;
 }
+/*Section Title Styles End */
 
+/*Meet the Trainers Start */
 .trainers {
     text-align: center;
 }
@@ -239,6 +246,7 @@ section {
     font-size: 17px;
     line-height: 1.3;
 }
+/*Trainer Styles End */
 
 /*REACH OUT STYLES START */
 .contact {
@@ -282,4 +290,11 @@ section {
 
 /* REACH OUT STYLES END */
 
+/*Utilities */
+.text-left {
+    text-align: left;
+}
 
+.text-right {
+    text align: right;
+}
