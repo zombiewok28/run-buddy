@@ -31,7 +31,7 @@ header {
     background-size: cover;          
     background-position: 80%;     
     background-attachment: fixed;
-  
+    z-index: 9999;
 
 }
 
@@ -45,8 +45,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: #fce138;
-}
+    color: var(--primary-color);}
 
 header nav {
     margin: 7px 0;
@@ -59,14 +58,15 @@ header nav ul{
     align-items: center;
     list-style: none;
 }
-
-header nav ul li a:hover {
-    margin: 0 30px;
+header nav ul li a{
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: #fce138;
-    color: #024e76;
+}
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -74,7 +74,7 @@ header nav ul li a:hover {
 
 /* Footer Styles Start */
 footer {
-    background: #fce138;
+    background: var(--primary-color);
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -94,7 +94,7 @@ footer div {
 }
 
 footer a {
-    color: #024e76;
+    color: var(--secdonar-color);
 }
 /* End Footer Styles */
 
@@ -110,6 +110,7 @@ section {
     background-position: center;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     background-position: 80%;     
     background-attachment: fixed;
@@ -117,9 +118,9 @@ section {
 
 .hero-form {
     border: 3px solid #024e76;
-    background-color: rgba(252,225,56, 0.8);
+    background-color: rgba(255, 225, 56, 0.8);
     padding: 20px;
-    color: #024e76; 
+    color: var(--secondary-color); 
     width: 40%;
     margin: 3.5%;
     box-shadow:rgba(0, 0, 0, 0.5);
@@ -140,11 +141,11 @@ section {
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
-    background-color: rgba(255,255,255, 0.785);
+    background-color: rgba(255,255,255, 0.75);
 }
 .form-input:focus {
     background-color: rgba(255,255,225, 1);
@@ -157,13 +158,7 @@ section {
 }
 
 .hero-form button:hover {
-    color: #fce138;
-    background-color: #024e76;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    background-color: #39a6b2;
+background-color: var(--tertiary-color);
 }
 
 .hero-cta {
@@ -172,16 +167,23 @@ section {
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
-    color: #fce138;
+    color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+.hero-form button{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size:16px;
+    border-radius: 10px;
+}
 /* Hero Styles End */
 
 /*What we do Styles */
@@ -288,8 +290,8 @@ section {
 
 /* Section Title Styles Start */
 .section-title {
-    font-size: 55px;
-    color: #024e76;
+    font-size: 48px;
+    color: var(--secondary-color);
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
@@ -298,28 +300,27 @@ section {
 }
 
 .primary-border {
-    border-color: #fce138;
+    border-color: var(--primary-color);
 }
 
 .secondary-border {
-    border-color: #39a6b2;
+    border-color: var(--tertiary-color);
 }
 /*Section Title Styles End */
 
 /*Meet the Trainers Start */
 .trainers {
-   width:100%;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .trainer {
     margin: 20px;
-    background: #024e76;
-    color: #fce138;
-    flex: 1;
+    background: var(--secondary-color);
+    color: var(--primary-color)
 }
 
 .trainer img {
@@ -329,14 +330,6 @@ section {
 .trainer-bio {
     padding: 25px;
     line-height: 1.3; 
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
 }
 
 .trainer-bio h3 {
@@ -360,7 +353,7 @@ section {
 }
 
 .contact h2 {
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 .contact-info iframe {
@@ -372,7 +365,7 @@ section {
 }
 
 .contact-info h3 {
-    color: #fce138;
+    color: var(--primary-color);
     font-size: 32px;
     }
 
@@ -395,16 +388,16 @@ section {
 }
 
 .contact-form input, .contact form textarea {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
-    background-color: rgba(255,255,255, 1);
+    background-color: rgba(255,255,255, 0.75);
 }
 .contact-form input:focus, .contact-form textarea:focus {
     background-color: rgba(255,255,225, 1);
@@ -414,22 +407,20 @@ section {
 .contact-form button {
     width: 100%;
     border: none;
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
     border-radius: 10px;
-    color: #fce138;
-    background: #39a6b2;
 }
 
 .contact-form button:hover {
-    color: #fce138;
-    background: #39a6b2;
+    color: var(--primary-color);
+    background: var(--tertiary-color);
 }
 .contact-info a {
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 /* REACH OUT STYLES END */
@@ -523,6 +514,9 @@ section {
     .step-text {
       flex: 100%;  
     }
+    .trainer-bio h3, .trainer-bio h4 {
+        display: block;
+    }
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -562,8 +556,9 @@ section {
     }
         
     }
-    .checkbox-wrapper input:checked + label::after {
-        content: "";
+    .checkbox-wrapper input:checked + label::after,
+    .radio-wrapper input + label:: after {
+        content: none;
     }
     .checkbox-wrapper label::before, .radio-wrapper label::before{
         content: "";
