@@ -34,9 +34,16 @@
         <section class="hero">
 
             <div class="hero-form">
-                <div class="background-image"></div>
 
-                <h3>Get Started Today</h3>
+                <div {
+                    --favorite-color: blue;
+                    color: var(--favorite-color);
+                    box-shadow: 5px 5px 10px var(--favorite-color);
+                    }
+                    
+                <div class="background-image"></div>
+              
+                        <h3>Get Started Today</h3>
                 <p>Fill out this form and one of our trainers will schedule a consult</p>
             <!-- Add form element -->
                  <form>
@@ -51,19 +58,24 @@
 
                 <p>
                     Have you worked out with a trainer before?
+                    <span class="radio-wrapper">
                         <input type="radio" name="trainer-confirm" id="trainer-yes" />
                         <label for="trainer-yes">Yes</label>
-
                         <input type="radio" name="trainer-confirm" id="trainer-no" />
                         <label for="trainer-no">No</label>
+                    </span>
+                    <span class="radio-wrapper">
+                        <input type="radio" name="trainer-confirm" id="trainer-no" />
+                        <label for="trainer-no">No</label>    
+                    </span>
 
-                </p>
                 <p>
-                    <label for="checkbox">
-                    I acknowledge that I am at least 18 years of age.
-
-                    </label>
+                    <span class="checkbox-wrapper"
                     <input type="checkbox" name="age-confirm" id="checkbox" />
+                    <label for="checkbox"> 
+                    I acknowledge that I am at least 18 years of age.
+                    </label>
+                    <span>
                 </p>
             <button type="submit">
                 Get running!
